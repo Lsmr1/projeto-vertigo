@@ -4,9 +4,12 @@
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif;
 }
-:root{
-    --gray-800:#1E293B;
-    --gray-600:#475569;
+
+:root {
+    --gray-800: #1E293B;
+    --gray-600: #475569;
+    --purple: #7C3AED;
+
 
 
 
@@ -16,7 +19,7 @@ header {
     background-image: url(./img/bg-mobile.png);
     background-size: cover;
     height: 8.475rem;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,14 +27,15 @@ header {
     margin-bottom: 3.7rem;
 }
 
-main{
-    padding-inline:1.5rem;
+main {
+    padding-inline: 1.5rem;
 }
 
 .descricao {
     margin-bottom: 2.5rem;
 
 }
+
 .descricao h1 {
     color: var(--gray-800);
     margin-bottom: 1rem;
@@ -41,4 +45,33 @@ main{
 .descricao p {
     font-size: 0.8125rem;
     color: var(--gray-600);
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login label {
+    font-size: 0.875rem;
+    color: var(--gray-800);
+    font-weight: 600;
+}
+
+.login a {
+    color: var(--purple);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.login a:hover {
+    text-decoration: underline;
+    
 }
